@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe 'chromium:headless' ./tests/test.ts"
+    "test": "testcafe 'chromium:headless' ./tests/"
   },
   "author": "",
   "license": "ISC",
