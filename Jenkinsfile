@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent { dockerfile true }
 
     parameters {
         choice(name:'Environment', choices:['qa', 'prod'], description: 'Example of choices environment')
