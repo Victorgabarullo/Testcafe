@@ -1,7 +1,5 @@
 pipeline{
-    agent{
-        label "docker"
-    }
+    agent any
 
     parameters {
         choice(name:'Environment', choices:['qa', 'prod'], description: 'Example of choices environment')
