@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe 'chromium:headless' ./tests/"
+    "test:all": "testcafe 'chromium:headless' ./tests/",
+    "test:login": "testcafe 'chromium:headless' ./tests/login/",
+    "test:shopping_cart": "testcafe 'chromium:headless' ./tests/shopping_cart/"
   },
   "author": "",
   "license": "ISC",

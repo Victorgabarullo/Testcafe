@@ -4,7 +4,7 @@ import Login from "../../src/pages/login_page";
 const login = new Login()
 
 fixture("SauceLab - Login").meta({type:"smoke", epic:"login"})
-    .page("https://www.saucedemo.com/");
+    .page("https://www.saucedemo.com/")
 
 test("Login with standard_user", async (t) => {    
     await login.LogInWith("standard_user", "secret_sauce");
