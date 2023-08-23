@@ -1,0 +1,16 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe 'chromium:headless' ./tests/test.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "testcafe": "^3.2.0",
+    "typescript": "^5.1.6"
+  }
+}
