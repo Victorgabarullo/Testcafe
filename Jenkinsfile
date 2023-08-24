@@ -17,6 +17,7 @@ pipeline{
                 echo "====++++Building test image++++===="
                 script{
                     sh "docker build -t ${IMAGE_NAME} ."
+                    sh "docker run --name test ${IMAGE_NAME}"
                 }                
             }
             post{
@@ -25,15 +26,6 @@ pipeline{
                 }
                 failure{
                     echo "========Image was buil failed========"
-                }
-            }
-        }
-
-        stage("Run tests") {
-            steps {
-                echo "====++++Running tests++++===="
-                script{
-                    sh "docker run --name test ${IMAGE_NAME}"
                 }
             }
         }
